@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pseudo Dots（疑似Dots）</title>
+<!-- SEARCH-CONSOLE: 所有権確認が必要になった時だけ、この行の下に google-site-verification のmetaタグを貼る -->
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#59636e;--line:#d8dee4;--link:#0b5cad}
+@media (prefers-color-scheme:dark){:root{--bg:#16181b;--fg:#e6e8eb;--muted:#9aa4ae;--line:#30363d;--link:#6cb6ff}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 48px}
+h1{font-size:1.6rem;line-height:1.3;margin:0 0 4px}h2{font-size:1.15rem;margin:2rem 0 .5rem;padding-top:1rem;border-top:1px solid var(--line)}
+p,li{overflow-wrap:anywhere}a{color:var(--link)}.muted{color:var(--muted);font-size:.9rem}code{font-size:.9em}
+nav{margin:1.5rem 0}nav a{margin-right:1rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Pseudo Dots（疑似Dots）</h1>
+<p class="muted">開発者本人専用の個人用AI秘書</p>
+<nav><a href="index.html">ホーム</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a></nav>
+<p>Pseudo Dotsは、開発者本人が自分のMac上で動かしている個人用のAI秘書です。一般には提供しておらず、利用者は開発者本人だけです。</p>
+
+<h2>このアプリがすること</h2>
+<ul>
+<li>本人のGoogleカレンダーの予定（今後最大14日分）を読み取り、準備が必要なことや期限を確認します。</li>
+<li>本人のGmailの新着メール（最大7日分）を読み取り、対応が必要なものや期限を見つけます。</li>
+<li>気づいた点を、本人専用のDiscordチャンネルへ短い通知として知らせ、本人の質問に答えます。</li>
+</ul>
+
+<h2>Googleのデータを求める理由</h2>
+<p>上の確認のためだけに、次の読み取り専用の権限を求めます。メールの送信・削除・既読への変更、添付ファイルの取得、予定の作成・変更は行いません。</p>
+<ul>
+<li>Gmailの読み取り（<code>gmail.readonly</code>）: 新着メールから対応や期限を見つけるため</li>
+<li>Googleカレンダーの読み取り（<code>calendar.readonly</code>）: 予定の準備や重なりを確認するため</li>
+<li>アカウントの識別（<code>openid</code>、メールアドレス）: 接続先が本人のアカウントであることを確かめるため</li>
+</ul>
+<p>Googleのデータの扱いは<a href="privacy.html">プライバシーポリシー</a>に記載しています。</p>
+
+<h2 lang="en">About (English)</h2>
+<p lang="en">Pseudo Dots is a personal AI assistant that its developer runs on their own Mac for their own Google account only; it is not offered to anyone else. It reads the developer's Gmail and Google Calendar with read-only scopes (<code>gmail.readonly</code>, <code>calendar.readonly</code>) to find deadlines and items that need attention, and posts short reminders to the developer's private Discord channel. It never sends, deletes or modifies email or calendar events. See the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+</main>
+</body>
+</html>

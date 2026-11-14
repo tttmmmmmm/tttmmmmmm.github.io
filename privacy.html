@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー｜Pseudo Dots</title>
+<!-- SEARCH-CONSOLE: 所有権確認が必要になった時だけ、この行の下に google-site-verification のmetaタグを貼る -->
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#59636e;--line:#d8dee4;--link:#0b5cad}
+@media (prefers-color-scheme:dark){:root{--bg:#16181b;--fg:#e6e8eb;--muted:#9aa4ae;--line:#30363d;--link:#6cb6ff}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 48px}
+h1{font-size:1.6rem;line-height:1.3;margin:0 0 4px}h2{font-size:1.15rem;margin:2rem 0 .5rem;padding-top:1rem;border-top:1px solid var(--line)}
+p,li{overflow-wrap:anywhere}a{color:var(--link)}.muted{color:var(--muted);font-size:.9rem}code{font-size:.9em}
+nav{margin:1.5rem 0}nav a{margin-right:1rem}
+</style>
+</head>
+<body>
+<main>
+<h1>プライバシーポリシー</h1>
+<p class="muted">Pseudo Dots（疑似Dots）／制定日: 2026年11月7日／更新日: 2026年11月14日</p>
+<nav><a href="index.html">ホーム</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a></nav>
+<p>このポリシーは、Pseudo Dots（以下「本アプリ」）がGoogleのユーザーデータをどのように取得・利用・保存・共有するかを説明します。本アプリは開発者本人が自分のGoogleアカウントだけに使う個人用アプリで、利用者は開発者本人だけです。</p>
+
+<h2>1. 取得するGoogleユーザーデータ</h2>
+<ul>
+<li>Gmail: メールの件名、送信元、受信日時、ラベル、必要な場合に限り本文（読み取り専用の <code>gmail.readonly</code>）。添付ファイルは取得しません。</li>
+<li>Googleカレンダー: 本人が登録したカレンダーの予定の件名、日時、場所、説明（読み取り専用の <code>calendar.readonly</code>）。</li>
+<li>アカウント情報: 接続先を確認するためのGoogleアカウントのメールアドレス（<code>openid</code>、<code>userinfo.email</code>）。</li>
+</ul>
+
+<h2>2. 利用目的</h2>
+<p>取得したデータは、本人に向けた次の機能を提供するためだけに使います。</p>
+<ul>
+<li>対応が必要なメール、期限、予定の準備を見つけて本人に知らせること</li>
+<li>本人がDiscordで尋ねた予定やメールについて答えること</li>
+</ul>
+<p>広告（ターゲティング広告を含む）、データの販売、信用や融資の判断、利用者のプロファイル作成には使いません。</p>
+
+<h2>3. 共有・移転</h2>
+<p>Googleユーザーデータを第三者に販売・提供することはありません。上の機能を提供するために、次の処理先だけを使います。</p>
+<ul>
+<li>本人のMac上で動くAIモデル（毎時の確認と、通常の質問への返答はここで行います）</li>
+<li>本人専用のDiscordチャンネル（通知と本人への返答の送り先）</li>
+<li>本人が契約しているOpenAIのサービス（ChatGPT）。1日2回の定期処理（予定の準備や調べものの下書きを作る処理）と、本人がChatGPTを指定した依頼や最新の情報が要る依頼で使います。その際ChatGPT側が同じ読み取り専用の道具でGmail・Googleカレンダーを読むため、必要な範囲のメールや予定の内容がOpenAIへ送られます。</li>
+</ul>
+
+<h2>4. 保存と保持期間</h2>
+<ul>
+<li>Googleの接続用トークンは、本人のMacのキーチェーンに保存します。</li>
+<li>メール本文や添付ファイルを、本アプリの状態ファイルへ複製しません。重複を防ぐため、確認済みの最新メールの受信日時と、本文の確認を待っているメールの識別子だけを保持します。</li>
+<li>処理の記録（会話や処理の履歴）にはメールや予定の内容の一部が含まれることがあり、本人のMac内に保存されます。本人が不要と判断した時点で削除します。</li>
+</ul>
+
+<h2>5. 保護の方法</h2>
+<ul>
+<li>読み取り専用の権限だけを使い、送信・削除・変更の権限は求めません。</li>
+<li>トークンはキーチェーンで保護し、Mac外との通信はHTTPSなどの暗号化された経路で行います。</li>
+<li>本アプリの処理は、ログインで保護された本人のMac上で行います。</li>
+</ul>
+
+<h2>6. アクセスの取り消しとデータの削除</h2>
+<p>Googleアカウントの<a href="https://myaccount.google.com/connections">サードパーティ製のアプリとサービス</a>から、いつでも本アプリのアクセスを取り消せます。取り消した後は、Mac内のトークンと処理の記録を削除します。問い合わせや削除の依頼は、Googleの同意画面に表示されるサポート用メールアドレスへご連絡ください。</p>
+
+<h2>7. Google API Services User Data Policy の遵守</h2>
+<p>本アプリによるGoogle APIから受け取った情報の利用と他のアプリへの移転は、Limited Use の要件を含む <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> に従います。Google Workspace APIから取得したデータを、汎用（非パーソナライズ）のAIモデルや機械学習モデルの開発・改善・学習に使いません。</p>
+
+<h2>8. 変更</h2>
+<p>Googleユーザーデータの扱いを変える場合は、このページを更新し、更新日を記載します。</p>
+
+<h2 lang="en">Summary (English)</h2>
+<div lang="en">
+<p>Pseudo Dots is a personal app used only by its developer for their own Google account. It accesses Gmail (subject, sender, date, labels, and body only when needed; no attachments) and Google Calendar events with read-only scopes (<code>gmail.readonly</code>, <code>calendar.readonly</code>), plus the account email address, solely to find deadlines and items that need attention and to answer the developer's own questions.</p>
+<p>Hourly checks and ordinary replies are processed by an AI model running locally on the developer's Mac. A twice-daily scheduled task (preparing for upcoming events and drafting research) and the developer's own requests that ask for ChatGPT or need current information run on the developer's own OpenAI (ChatGPT) account, which uses the same read-only tools, so the necessary parts of email and calendar content are sent to OpenAI. Notifications are posted to the developer's private Discord channel. Google user data is never sold, used for advertising, credit or lending decisions, or shared with anyone else.</p>
+<p>The OAuth token is stored in the macOS Keychain, and traffic leaving the Mac uses encrypted connections such as HTTPS. Email bodies are not copied into the app's state files; for de-duplication, only the receipt time of the latest checked message and the IDs of messages awaiting a body check are kept. Processing logs on the Mac may contain parts of email or event content and are deleted when no longer needed. Access can be revoked at any time from the Google Account's third-party connections page; local tokens and logs are then deleted. Requests can be sent to the support email shown on the Google consent screen.</p>
+<p>Pseudo Dots's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Data obtained through Google Workspace APIs is not used to develop, improve, or train generalized (non-personalized) AI and/or ML models.</p>
+</div>
+</main>
+</body>
+</html>
